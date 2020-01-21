@@ -41,7 +41,7 @@ public class CompanyDetails {
 	}
 	
 	
-    @RequestMapping(value = "/{companyId}/database", method = RequestMethod.POST)
+    @RequestMapping(value = "/database/{companyId}", method = RequestMethod.POST)
     public ResponseEntity<String> saveDatabaseInfo(@RequestBody DataBaseInfo baseInfo) {    	
     	
     		detailsRepo.save(baseInfo);    	
